@@ -36,8 +36,8 @@ int main()
    {
        cout<<"FileNotFoundException\nor,Dictionary is Empty"<<endl;
    }
-  // while(1)
-  // {
+   while(1)
+   {
        cout<<"WELCOME TO MONGLO DICTIONARY"<<endl;
        cout<<"MENU"<<endl;
        cout<<"<1> ADD A WORD"<<endl;
@@ -108,9 +108,8 @@ int main()
                   cin>>choice; 
                   
          }
-      // cout<<endl<<"Enter Choice :";
-      // cin>>choice;
-  // }
+     
+    }
    return 0;
 }
 
@@ -139,7 +138,7 @@ int main()
 
 node *getTreeFromSavedFile() //extract tree from saved dictionary file
 {
-   node *tree;
+   node *tree=NULL;
    char word[25],meaning[100],text[125];
    char *str;
    int flag=0;
